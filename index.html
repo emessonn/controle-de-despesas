@@ -35,8 +35,18 @@
       </ul>
 
       <h3>Adicionar transação</h3>
+      <p class="input-empty-alert">Preencha todos os campos</p>
       
       <form id="form">
+        <div class="form-control">
+          <label for="transaction-type">Tipo da Transação</label>
+          <select id="transaction-type">
+            <option disabled selected id="selectedDefault">SELECIONE O TIPO DA TRANSAÇÃO</option>
+            <option value="income">Receita</option>
+            <option value="expense">Despesa</option>
+          </select>
+        </div>
+
         <div class="form-control">
           <label for="text">Nome</label>
           <input autofocus type="text" id="text" placeholder="Nome da transação" />
